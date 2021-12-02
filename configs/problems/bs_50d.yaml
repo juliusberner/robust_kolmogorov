@@ -1,0 +1,26 @@
+###########
+# PROBLEM #
+###########
+problem_factory:
+  value: robust_kolmogorov.problems.BlackScholes
+problem_kwargs.dim:
+  value: 50
+problem_kwargs.interval:
+  value: [4.5, 5.5]
+problem_kwargs.terminal_time:
+  value: 1.
+problem_kwargs.strike_price:
+  value: 5.5
+problem_kwargs.drift:
+  value: -0.05
+problem_kwargs.mc_samples:
+  value: 65536
+problem_kwargs.mc_split_size:
+  value: 8
+##############
+# EVALUATION #
+##############
+visualize:
+  value: ["approx", "plot", "stats"]
+test_freq:
+  value: 15

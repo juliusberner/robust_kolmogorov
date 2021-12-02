@@ -1,0 +1,20 @@
+time_step:
+  value: [1.0e-01, 3.2e-02, 1.0e-02, 3.2e-03, 1.0e-03]
+train_steps:
+  value: -1
+check_train:
+  value: true
+milestones:
+  value: [0.,0.,0.,0.]
+batch_size:
+  value: 128
+milestone_metric:
+  value: "step"
+visualize:
+  value: null
+cuda_max_mem_train_mb:
+  value: null
+test_freq:
+  value: null
+save_freq:
+  value: null

@@ -1,0 +1,8 @@
+numpy~=1.21.2
+torch~=1.10.1
+wandb~=0.12.7
+PyYAML~=6.0
+plotly~=5.3.1
+jupyter
+scipy~=1.7.3
+python-dotenv~=0.19.2

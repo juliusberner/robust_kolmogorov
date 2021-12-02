@@ -1,0 +1,23 @@
+#########
+# MODEL #
+#########
+model_factory:
+  value: robust_kolmogorov.models.MultilevelNet
+grad_model_factory:
+  value: robust_kolmogorov.models.MultilevelNet
+model_kwargs.activation_factory:
+  value: torch.nn.SiLU
+grad_model_kwargs.activation_factory:
+  value: torch.nn.SiLU
+model_kwargs.levels:
+  value: 3
+grad_model_kwargs.levels:
+  value: 3
+model_kwargs.factor:
+  value: 3
+grad_model_kwargs.factor:
+  value: 3
+model_kwargs.normalization_factory:
+  value: "builtins.None"
+grad_model_kwargs.normalization_factory:
+  value: "builtins.None"

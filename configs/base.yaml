@@ -1,0 +1,74 @@
+###########
+# GENERAL #
+###########
+import_keys:
+  value:
+    - dtype
+    - problem_factory
+    - optimizer_factory
+    - model_factory
+    - grad_model_factory
+    - model_kwargs.activation_factory
+    - model_kwargs.normalization_factory
+    - grad_model_kwargs.activation_factory
+    - grad_model_kwargs.normalization_factory
+dtype:
+  value: "torch.float"
+device:
+  value: null # defaults to 'cuda' if available, else 'cpu'
+check_train:
+  value: true
+check_test:
+  value: false
+cuda_max_mem_train_mb:
+  value: null
+cuda_max_mem_mb:
+  value: null
+seed:
+  value: 123456789
+############
+# TRAINING #
+############
+optimizer_factory:
+  value: torch.optim.Adam
+train_steps:
+  value: 30000
+train_time_h:
+  value: null
+batch_size:
+  value: 1024
+milestones:
+  value: 0.9
+milestone_metric:
+  value: "step"
+time_step:
+  value: [1.0e-02, 1.0e-03]
+lr:
+  value: [5.0e-04, 5.0e-05]
+sample_repetitions:
+  value: 1
+save_freq:
+  value: 10
+##############
+# EVALUATION #
+##############
+visualize:
+  value: ["approx", "approx_grad", "plot", "plot_grad", "stats"]
+test_freq:
+  value: 30
+evaluator_kwargs.approx_batch_size:
+  value: 131072
+evaluator_kwargs.approx_batches:
+  value: 10
+evaluator_kwargs.grad_reduce:
+  value: "norm"
+evaluator_kwargs.approx_p:
+  value: [1, 2, "infinity"]
+evaluator_kwargs.stats_steps:
+  value: 30
+evaluator_kwargs.stats_grad_thresh:
+  value: [0.1, 0.01, 0.001]
+evaluator_kwargs.plot_interval_stretch:
+  value: 2.0
+evaluator_kwargs.plot_time:
+  value: null # defaults to [0, T/2, T]

@@ -1,0 +1,19 @@
+#########
+# MODEL #
+#########
+model_factory:
+  value: robust_kolmogorov.models.DenseNet
+grad_model_factory:
+  value: robust_kolmogorov.models.DenseNet
+model_kwargs.activation_factory:
+  value: torch.nn.SiLU
+grad_model_kwargs.activation_factory:
+  value: torch.nn.SiLU
+model_kwargs.arch:
+  value: [170, 170, 170]
+grad_model_kwargs.arch:
+  value: [170, 170, 170]
+model_kwargs.normalization_factory:
+  value: "builtins.None"
+grad_model_kwargs.normalization_factory:
+  value: "builtins.None"

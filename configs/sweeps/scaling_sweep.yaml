@@ -1,0 +1,29 @@
+program: main.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - --overwrite
+  - ${args_json}
+name: scaling sweep all
+metric:
+  name: approx/L1
+  goal: minimize
+method: grid
+parameters:
+  loss_mode:
+    values:
+      - "bsde"
+      - "model"
+      - "bsde_eff"
+      - "fk"
+      - "detach"
+      - "model_eff"
+  batch_size:
+    values:
+      - 16
+      - 128
+      - 1024
+      - 8192
+      - 65536
+      - 524288

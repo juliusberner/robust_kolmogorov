@@ -1,0 +1,21 @@
+###########
+# PROBLEM #
+###########
+problem_factory:
+  value: robust_kolmogorov.problems.LinearizedHJB
+problem_kwargs.dim:
+  value: 10
+problem_kwargs.interval:
+  value: [-1.5, 1.5]
+problem_kwargs.terminal_time:
+  value: 1.
+problem_kwargs.kappa:
+  value: 0.1
+problem_kwargs.eta:
+  value: 0.04
+problem_kwargs.delta_t_reference:
+  value: 0.005
+problem_kwargs.xb_reference:
+  value: 2.5
+problem_kwargs.nx_reference:
+  value: 1000

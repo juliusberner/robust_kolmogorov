@@ -1,0 +1,31 @@
+model_factory:
+  value: robust_kolmogorov.models.FeedForward
+model_kwargs.activation_factory:
+  value: torch.nn.Tanh
+model_kwargs.arch:
+  value: [16, 16]
+optimizer_factory:
+  value: torch.optim.LBFGS
+problem_factory:
+  value: robust_kolmogorov.problems.Heat
+problem_kwargs.dim:
+  value: 2
+evaluator_kwargs.approx_batch_size:
+  value: 4
+evaluator_kwargs.approx_batches:
+  value: 3
+test_freq:
+  value: 2
+lr:
+  value: 0.001
+time_step:
+  value: [0.5, 0.1, 0.05, 0.01]
+batch_size:
+  value: [16, 32]
+train_steps:
+  value: 4
+milestones:
+  value: [0.25, 0.5, 0.75]
+loss_mode:
+  value: ["fk", "bsde", "detach"]
+

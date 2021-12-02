@@ -1,0 +1,13 @@
+###########
+# PROBLEM #
+###########
+problem_factory:
+  value: robust_kolmogorov.problems.HeatGaussian
+problem_kwargs.dim:
+  value: 50
+problem_kwargs.interval:
+  value: [-0.5, 0.5]
+problem_kwargs.terminal_time:
+  value: 1.
+problem_kwargs.diffusivity:
+  value: 0.125
