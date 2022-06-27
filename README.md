@@ -1,6 +1,6 @@
 # Robust SDE-Based Variational Formulations for Solving Linear PDEs via Deep Learning
 
-> Accompanying code for the ICML 2022 paper 'Robust SDE-Based Variational Formulations for Solving Linear PDEs via Deep Learning'. Implemented in [PyTorch](https://pytorch.org/), 
+> Accompanying code for the ICML 2022 paper ['Robust SDE-Based Variational Formulations for Solving Linear PDEs via Deep Learning'](https://arxiv.org/pdf/2206.10588.pdf). Implemented in [PyTorch](https://pytorch.org/), 
 > experiment execution and tracking using [Weights & Biases](https://wandb.ai/).
 
 ![Illustration](illustration.png)
