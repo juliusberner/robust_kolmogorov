@@ -1,6 +1,8 @@
 # Robust SDE-Based Variational Formulations for Solving Linear PDEs via Deep Learning
 
-> Accompanying code for the ICML 2022 paper ['Robust SDE-Based Variational Formulations for Solving Linear PDEs via Deep Learning'](https://arxiv.org/pdf/2206.10588.pdf). Implemented in [PyTorch](https://pytorch.org/), 
+> Accompanying code for  [ICML 2022 paper](https://arxiv.org/pdf/2206.10588.pdf) ([Poster](https://www.researchgate.net/publication/362158073_Poster_-_Robust_SDE-Based_Variational_Formulations_for_Solving_Linear_PDEs_via_Deep_Learning)). 
+> Improved DL-based solvers for linear Kolmogorov PDEs using variance-reduced losses. 
+> Implemented in [PyTorch](https://pytorch.org/), 
 > experiment execution and tracking using [Weights & Biases](https://wandb.ai/).
 
 ![Illustration](illustration.png)
